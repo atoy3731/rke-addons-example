@@ -1,0 +1,11 @@
+nodes:
+    - address: 192.168.10.45
+      user: adam
+      ssh_key_path: /Users/adam.toy/.ssh/id_rsa
+      role:
+        - controlplane
+        - etcd
+        - worker
+
+addons_include:
+  - ./nginx.yaml
